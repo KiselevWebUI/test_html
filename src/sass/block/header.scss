@@ -1,0 +1,120 @@
+.header{
+    position: relative;
+
+    .header-img{
+        position: relative;
+        z-index: 1;
+    }
+
+    .header-fixed{
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        z-index: 20;
+    }
+}
+
+header{
+    background: $header-background;
+    opacity: 0.9;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100px;
+    position: relative;
+    max-width: $container-max-width;
+    top: 0px;
+    z-index: 10;
+
+    .logo{
+        font-family: $logo-font-family;
+        font-weight: $logo-font-weight;
+        font-size: $logo-font-size;
+        color: $base-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        align-self: center;
+        margin-left: 20%;
+
+        span{
+            color: $active-color;
+        }
+    }
+
+    @include mw1600  {
+        .logo{
+            margin-left: 10%;
+        }
+    }
+
+    @include mw800  {
+        .logo{
+            margin-left: 5%;
+            font-size: $logo-font-size-800;
+        }
+    }
+
+    @include mw700  {
+        .logo{
+            margin: 0;
+        }
+    }
+    
+    .header_menu{
+        width: 435px;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        margin-right: 19%;
+
+        li{
+            text-transform: uppercase;
+            font-size: $small-font-size;
+        
+            a{
+                font-family: $lato-bold-font-family;
+                font-size: $small-font-size;
+                text-decoration: none;
+                color: $base-color;
+                &.active{
+                    color: $active-color;
+                }
+            }
+        }
+    }
+
+    @include mw1600  {
+        .header_menu{
+            margin-right: 10%;
+            width: 300px;
+        }
+    }
+
+    @include mw800  {
+        .header_menu{
+            margin-right: 5%;
+            width: 300px;
+        }
+    }
+
+    @include mw700  {
+        .header_menu{
+            margin: 0;
+        }
+    }
+
+}
+
+@include mw800  {
+    header{
+        height: 70px;
+    }
+}
+
+@include mw700  {
+    header{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70px;
+    }
+}

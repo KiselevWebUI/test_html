@@ -1,0 +1,10 @@
+header{
+    background: #eee;
+}
+
+@media (max-width: 700px) {
+    header{
+        color: green;
+        background: #000;
+    }
+}

@@ -1,0 +1,93 @@
+$lato-thin-font-family: "LatoT";
+$lato-regular-font-family: "LatoR";
+$lato-bold-font-family: "LatoB";
+$lato-black-font-family: "LatoBl";
+
+$raleway-regular-font-family: "RalewayR";
+$raleway-bold-font-family: "RalewayB";
+$raleway-extra-bold-font-family: "RalewayEB";
+
+$base-font-family: $lato-regular-font-family;
+$small-font-size: 13px;
+$base-font-size: 16px;
+$med-font-size: 18px;
+$med2-font-size: 20px;
+$med3-font-size: 24px;
+$big-font-size: 30px;
+$big2-font-size: 48px;
+$base-font-weight: 400;
+$base-line-heigth: 1.2em;
+$base-color: #fff;
+$base-color-dark: #272733;
+$active-color: #43ABF0;
+$base-background-color: #3D4050;
+
+
+/* button */
+$button-font-family: $lato-regular-font-family;
+$button-font-size: 15px;
+$button-line-height: 40px;
+$button-color: #fff;
+$button-color-dark: #2A2B30;
+$button-width: 150px;
+$button-border-radius: 4px;
+$button-border: 1px solid #fff;
+$button-border-dark: 1px solid #6F6D7B;
+$button-border-blue: 2px solid #3E9CDC;
+$button-background-white: #fff;
+$button-background-blue: #3E9CDC;
+/* button end */
+
+
+$container-max-width: 1920px;
+
+/* header */
+$header-background: #10101D;
+/* header end */
+
+/* footer */
+$footer-background: #3D4050;
+/* footer end */
+
+/* logo */
+$logo-font-family: RalewayB;
+$logo-font-weight: 800;
+$logo-font-size: 28px;
+$logo-font-size-800: 20px;
+/* logo end */
+
+@mixin mw350 {
+    @media (max-width: 550px) {
+        @content;
+    }
+}
+
+@mixin mw550 {
+    @media (max-width: 550px) {
+        @content;
+    }
+}
+
+@mixin mw700 {
+    @media (max-width: 700px) {
+        @content;
+    }
+}
+
+@mixin mw800 {
+    @media (max-width: 800px) {
+        @content;
+    }
+}
+
+@mixin mw1200 {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin mw1600 {
+    @media (max-width: 1600px) {
+        @content;
+    }
+}

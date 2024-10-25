@@ -1,0 +1,165 @@
+.promo{
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 24%;
+    left: 20%;
+    z-index: 10;
+    color: $base-color-dark;
+
+    h1{
+        font-family: $base-font-family;
+        font-size: $big2-font-size;
+        line-height: 1.2em;
+        color: $active-color;
+        text-transform: uppercase;
+
+        span{
+            color: $base-color-dark;
+        }
+    }
+
+    @include mw1200  {
+        h1{
+            font-size: $big-font-size;
+        }
+    }
+
+    @include mw800  {
+        h1{
+            font-size: $med3-font-size;
+        }
+    }
+
+    @include mw700  {
+        h1{
+            font-size: $med2-font-size;
+        }
+    }
+
+    @include mw550  {
+        h1{
+            font-size: $base-font-size;
+        }
+    }
+
+    @include mw350  {
+        h1{
+            font-size: $small-font-size;
+        }
+    }
+
+    .promo-text{
+        margin-top: 10%;
+        padding-left: 10px;
+
+        p{
+            font-size: $med2-font-size;
+            font-weight: 700;
+            line-height: 1.5em;
+        }
+
+        @include mw800 {
+            p{
+                font-size: $base-font-size;
+            }
+        }
+
+        ul{
+            margin: 5px 0 0 10px;
+
+            li{
+                font-size: $med2-font-size;
+                font-weight: 400;
+                line-height: 1.5em;
+            }
+
+            li::before{
+                content: ' - ';
+            }
+        }
+        
+    }
+
+    @include mw1200  {
+        .promo-text{
+            margin-top: 3%;
+        }
+    }
+
+    @include mw700  {
+        .promo-text{
+            display: none;
+        }
+    }
+
+    .promo-buttons{
+        margin-top: 8%;
+
+        button{
+            width: 180px;
+            margin-right: 20px;
+        }
+
+        @include mw700  {
+            button{
+                width: 150px;
+                line-height: 30px;
+            }
+        }
+
+        @include mw550  {
+            button{
+                width: 130px;
+                margin: 0;
+                line-height: 20px;
+            }
+        }
+
+    }
+
+    @include mw700  {
+        .promo{
+            left: 3%;
+            width: 95%;
+        }
+    }
+
+    @include mw1200  {
+        .promo-buttons{
+            margin-top: 2%;
+        }
+    }
+
+    @include mw550  {
+        .promo-buttons{
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+        }
+    }
+}
+
+@include mw550  {
+    .promo{
+        padding-top: 50px;
+        left: 3%;
+        width: 75%;
+    }
+}
+
+@include mw700  {
+    .promo{
+        padding-top: 40px;
+        left: 3%;
+        width: 75%;
+    }
+}
+
+@include mw1200  {
+    .promo{
+        left: 10%;
+        width: 70%;
+    }
+}

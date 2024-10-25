@@ -1,0 +1,281 @@
+.content{
+    
+    min-height: 300px;
+    width: 60%;
+    margin: 0 auto;
+
+    h1{
+        font-family: $lato-black-font-family;
+        font-size: 36px;
+        color: $base-color;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 11%;
+
+        span{
+            color: $active-color;
+        }
+
+    }
+
+    @include mw700  {
+        h1{
+            font-size: 30px;
+        }
+    }
+
+    @include mw550  {
+        h1{
+            font-size: 24px;
+        }
+    }
+
+    @include mw350  {
+        h1{
+            font-size: 20px;
+        }
+    }
+
+    h3{
+        font-size: $med-font-size;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .order_steps{
+        margin-top: 6%;
+        margin-bottom: 7%;
+        position: relative;
+
+        .bullets{
+            position: relative;
+            top: 54px;
+            height: 6px;
+            width: 90%;
+            z-index: 1;
+            margin: 0 auto;
+            z-index: 1;
+            background: url("../img/bullets_2.png") repeat-x center center;
+        }
+
+        @include mw1200  {
+            .bullets{
+                display: none;
+            }
+        }
+
+        ul{
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+
+            li{
+                width: 209px;
+                text-align: center;
+
+                a{
+                    display: inline-block;
+                    position: relative;
+                    width: 100px;
+                    height: 100px;
+                    background: url("../img/ellipse.png") no-repeat center center;
+
+                    img{
+                        position: relative;
+                        top: 23px;
+                    }
+
+                }
+
+                @include mw550  {
+                    a{
+                        background: none;
+                    }
+                }
+
+                p{
+                    margin-top: 9%;
+                }
+
+                @include mw1200  {
+                    p{
+                        padding-left: 10px;
+                        width: inherit;
+                    }
+                }
+
+                @include mw550  {
+                    p{
+                        width: 65%;
+                    }
+                }
+            }
+
+            @include mw1200  {
+                li{
+                    display: flex;
+                    width: 50%;
+                    padding-bottom: 10px;
+                }
+            }
+
+            @include mw550  {
+                li{
+                    display: flex;
+                    width: 100%;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        @include mw1200  {
+            ul{
+                flex-wrap: wrap;
+            }
+        }
+
+    }
+
+    .form{
+
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 100%;
+
+            input{
+                font-size: $med-font-size;
+            }
+
+            select{
+                font-size: $med-font-size;
+            }
+            
+            .form-item{
+                position: relative;
+                width: 32%;
+                height: 52px;
+                margin-bottom: 30px;
+            }
+
+            @include mw800  {
+                .form-item{
+                    width: 48%;
+                }
+            }
+
+            @include mw550  {
+                .form-item{
+                    width: 100%;
+                }
+            }
+
+            .form-item_2{
+                position: relative;
+                width: 66%;
+                height: 52px;
+                margin-bottom: 30px;
+            }
+
+            @include mw800  {
+                .form-item_2{
+                    width: 100%;
+                    order: 1
+                }
+            }
+
+            .form-item:last-child{
+                order: 1;
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding-top: 2%;
+            }
+
+            .field{
+                border: $button-border;
+                width: 100%;
+                height: 48px;
+                border-radius: 3px;
+            }
+
+            select.field{
+                height: 52px;
+                width: 102%;
+            }
+
+            .file-field-fake{
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                line-height: 48px;
+                text-align: center;
+                border-radius: 3px;
+                background: $button-background-white;
+                color: $base-color-dark;
+                border: $button-border-blue;
+
+                display: flex;
+                justify-content: center;
+
+                img{
+                    position: relative;
+                    top: 4px;
+                    left: -3px
+                }
+            }
+            
+            .file-added div{
+                display: block;
+                text-align: left;
+                padding-left: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                justify-content: start;
+            }
+
+            .file-field{
+                position: relative;
+                z-index: 10;
+                width: 100%;
+                height: 48px;
+                border-radius: 3px;
+                opacity: 0;
+            }
+
+            #rangeText{
+                float: right;
+            }
+
+            #rangeText::after{
+                content: " %";
+            }
+
+            button{
+                width: 30%;
+            }
+
+            @include mw700  {
+                button{
+                    width: 50%;
+                }
+            }
+        }
+        
+    }
+}
+
+@include mw1200  {
+    .content{
+        width: 80%;
+    }
+}
+
+@include mw1600  {
+    .content{
+        width: 70%;
+    }
+}

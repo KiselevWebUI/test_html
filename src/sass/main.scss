@@ -1,0 +1,72 @@
+@import "variables";
+@import "reset";
+@import "fonts";
+
+html{
+    height: 100%;
+}
+body{
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    line-height: $base-line-heigth;
+    font-weight: $base-font-weight;
+    background-color: $base-background-color;
+    color: $base-color;
+    height: 100%;
+
+}
+
+button{
+    font-family: $button-font-family;
+    line-height: $button-line-height;
+    text-align: center;
+    background: $button-background-blue;
+    font-size: $button-font-size;
+    border: $button-border;
+    color: $button-color;
+    border-radius: $button-border-radius;
+    text-transform: uppercase;
+    width: $button-width;
+}
+
+.button_white{
+    color: $button-color;
+    background: $button-background-white;
+    color: $button-color-dark;
+    border: $button-border-dark;
+}
+
+.container{
+    position: relative;
+    z-index: 2;
+    display: table; 
+    max-width: $container-max-width;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+    .header{
+        display: table-row; 
+        position: relative;
+    }
+
+    .main{
+        display: table-row; 
+        position: relative;
+        z-index: 10;
+        height: 100%;
+        background: $base-color-dark url("../img/map.png") no-repeat center top;
+        vertical-align: top;
+    }
+
+    .footer{
+        display: table-row; 
+        background: $footer-background;
+    }
+}
+
+
+@import "block/header";
+@import "block/promo";
+@import "block/content";
+@import "block/footer";

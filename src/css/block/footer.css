@@ -1,0 +1,10 @@
+footer{
+    background: #ccc;
+}
+
+@media (max-width: 700px) {
+    footer{
+        color: green;
+        background: #000;
+    }
+}

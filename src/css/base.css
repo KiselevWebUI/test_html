@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    background: url("../img/Layer_9_1.jpg") no-repeat;
+}
+
+@media (max-width: 700px) {
+    body{
+        color: green;
+        background: #000;
+    }
+}
+
+@import "block/footer.css";
+@import "block/header.css";
+@import "block/title.css";
+@import "block/news.css";

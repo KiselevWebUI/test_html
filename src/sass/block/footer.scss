@@ -1,0 +1,132 @@
+footer{
+    min-height: 80px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    span{
+        align-self: center;
+    }
+
+    .delim-1{
+        display: none;
+    }
+
+    @include mw1200  {
+        .delim-1{
+            display: none;
+        }
+    }
+
+    .delim-2{
+        display: unset;
+    }
+
+    @include mw1200  {
+        .delim-2{
+            display: none;
+        }
+    }
+
+    .delim-3{
+        display: unset;
+    }
+
+    @include mw1200  {
+        .delim-3{
+            display: none;
+        }
+    }
+
+    .copy{
+        align-self: center;
+        margin: 0 20px 0 20%;
+        font-size: 13px;
+        color: $base-color;
+        white-space: nowrap;
+    }
+
+    @include mw1200  {
+        .copy{
+            margin: 10px 0 10px 0;
+            order: 1;
+        }
+    }
+
+    .money{
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            position: relative;
+            margin: 0 15px;
+            font-size: $small-font-size;
+            color: $base-color;
+            white-space: nowrap;
+
+            img{
+                position: relative;
+                top: 3px;
+                margin-right: 5px;
+            }
+        }
+
+        @include mw550  {
+            a{
+                margin: 0 5px;
+            }
+        }
+
+        @include mw350  {
+            a{
+                margin: 0 2px;
+            }
+        }
+    }
+
+
+    @include mw1200  {
+        .money{
+            margin: 0;
+        }
+    }
+
+    .contacts{
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        margin-right: 19%;
+
+        a{
+            position: relative;
+            margin: 0 15px;
+            font-size: $small-font-size;;
+            color: $base-color;
+            white-space: nowrap;
+
+            img{
+                position: relative;
+                top: 3px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+
+    @include mw1200  {
+        .contacts{
+            margin: 5px 0;
+        }
+    }
+    
+}
+
+@include mw1200  {
+    footer{
+        flex-direction: column;
+    }
+}
+
+
