@@ -74,6 +74,12 @@
                 line-height: 1.5em;
             }
 
+            @include mw800  {
+                li{
+                    font-size: $base-font-size
+                }
+            }
+
             li::before{
                 content: ' - ';
             }
@@ -81,7 +87,7 @@
         
     }
 
-    @include mw1200  {
+    @include mw1600  {
         .promo-text{
             margin-top: 3%;
         }
@@ -125,7 +131,7 @@
         }
     }
 
-    @include mw1200  {
+    @include mw1600  {
         .promo-buttons{
             margin-top: 2%;
         }
@@ -143,9 +149,9 @@
 
 @include mw550  {
     .promo{
-        padding-top: 50px;
+        padding-top: 40px;
         left: 3%;
-        width: 75%;
+        width: 65%;
     }
 }
 

@@ -705,6 +705,14 @@ footer .contacts a img {
     width: 300px;
   }
 
+  .promo .promo-text {
+    margin-top: 3%;
+  }
+
+  .promo .promo-buttons {
+    margin-top: 2%;
+  }
+
   .content {
     width: 70%;
   }
@@ -715,16 +723,12 @@ footer .contacts a img {
 }
 
 @media (max-width: 1200px) {
+  header {
+    height: 70px;
+  }
+
   .promo h1 {
     font-size: 30px;
-  }
-
-  .promo .promo-text {
-    margin-top: 3%;
-  }
-
-  .promo .promo-buttons {
-    margin-top: 2%;
   }
 
   .promo {
@@ -808,15 +812,15 @@ footer .contacts a img {
     width: 300px;
   }
 
-  header {
-    height: 70px;
-  }
-
   .promo h1 {
     font-size: 24px;
   }
 
   .promo .promo-text p {
+    font-size: 16px;
+  }
+
+  .promo .promo-text ul li {
     font-size: 16px;
   }
 
@@ -919,9 +923,9 @@ footer .contacts a img {
   }
 
   .promo {
-    padding-top: 50px;
+    padding-top: 40px;
     left: 3%;
-    width: 75%;
+    width: 65%;
   }
 
   .content h1 {
@@ -934,6 +938,7 @@ footer .contacts a img {
 
   .content .order_steps ul li a {
     background: none;
+    height: 50px;
   }
 
   .content .order_steps ul li p {
